@@ -38,14 +38,14 @@ setTimeout(function() {
     } else {
         console.error('Password next button not found!');
     }
-    // Set another timeout to check and replace the URL
+}, 5000);
+
+// Set another timeout to check and replace the URL
 setTimeout(function() {
     var currentURL = window.location.href;
     if (currentURL === 'https://myaccount.google.com/' || currentURL === 'https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1' || currentURL === 'https://myaccount.google.com/?pli=1') {
         var newURL = 'https://youtube.com/channel_switcher';
         window.location.replace(newURL);
     }
-}, 3000);
-}, 5000);
-
+}, 2000);
 
